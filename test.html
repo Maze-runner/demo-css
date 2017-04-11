@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            'use strict';
+            var obj = {
+            getName:function(){
+                    return function(){
+                        console.log(this);
+                    }
+                }
+            }
+           // obj.getName();
+            obj.getName()();
+        </script>
+    </body>
+</html>

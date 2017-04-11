@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            setTimeout(function(){
+                console.log('1');
+            },4000);
+            //模拟程序读取耗时代码 5秒
+            var past = new Date().getTime();
+            do{
+                var now = new Date().getTime();
+            }while( (now-past) <= 2000);
+            console.log('页面加载完成');
+        </script>
+    </body>
+</html>

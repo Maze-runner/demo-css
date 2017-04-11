@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+    </head>
+    <body>
+        
+        <script>
+            //debugger;
+            var a = 10;
+            function foo1(){
+                foo2();
+            }
+            foo1();
+        </script>
+
+        <script>
+            foo();
+            var b = 20;
+            function foo(){
+                foo1();
+            }
+            function foo2(){
+                console.log(b);
+            }
+        </script>
+    </body>
+</html>
